@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		305B7AA2F28845C770AF9677 /* Pods_GateLockerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE77DD49CF7D42B6F7C6952 /* Pods_GateLockerIOS.framework */; };
 		6718A1B823EC54F700138762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6718A1B723EC54F700138762 /* AppDelegate.swift */; };
 		6718A1BA23EC54F700138762 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6718A1B923EC54F700138762 /* SceneDelegate.swift */; };
 		6718A1BC23EC54F700138762 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6718A1BB23EC54F700138762 /* ViewController.swift */; };
 		6718A1BF23EC54F700138762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6718A1BD23EC54F700138762 /* Main.storyboard */; };
 		6718A1C123EC551000138762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6718A1C023EC551000138762 /* Assets.xcassets */; };
 		6718A1C423EC551000138762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6718A1C223EC551000138762 /* LaunchScreen.storyboard */; };
+		6718A1CC23EC57F000138762 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6718A1CB23EC57F000138762 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		543BE46F02305E0C2A1C7A2D /* Pods-GateLockerIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GateLockerIOS.release.xcconfig"; path = "Target Support Files/Pods-GateLockerIOS/Pods-GateLockerIOS.release.xcconfig"; sourceTree = "<group>"; };
 		6718A1B423EC54F700138762 /* GateLockerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GateLockerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6718A1B723EC54F700138762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6718A1B923EC54F700138762 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		6718A1C023EC551000138762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6718A1C323EC551000138762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6718A1C523EC551000138762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6718A1CB23EC57F000138762 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6DE77DD49CF7D42B6F7C6952 /* Pods_GateLockerIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GateLockerIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE6326309459E45776D2DB8 /* Pods-GateLockerIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GateLockerIOS.debug.xcconfig"; path = "Target Support Files/Pods-GateLockerIOS/Pods-GateLockerIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305B7AA2F28845C770AF9677 /* Pods_GateLockerIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0340C5DE95B95EA75C4FB101 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DE77DD49CF7D42B6F7C6952 /* Pods_GateLockerIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		135D90E36335555F6304E6FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBE6326309459E45776D2DB8 /* Pods-GateLockerIOS.debug.xcconfig */,
+				543BE46F02305E0C2A1C7A2D /* Pods-GateLockerIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6718A1AB23EC54F700138762 = {
 			isa = PBXGroup;
 			children = (
 				6718A1B623EC54F700138762 /* GateLockerIOS */,
 				6718A1B523EC54F700138762 /* Products */,
+				135D90E36335555F6304E6FC /* Pods */,
+				0340C5DE95B95EA75C4FB101 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +88,7 @@
 				6718A1BD23EC54F700138762 /* Main.storyboard */,
 				6718A1C023EC551000138762 /* Assets.xcassets */,
 				6718A1C223EC551000138762 /* LaunchScreen.storyboard */,
+				6718A1CB23EC57F000138762 /* GoogleService-Info.plist */,
 				6718A1C523EC551000138762 /* Info.plist */,
 			);
 			path = GateLockerIOS;
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6718A1C823EC551000138762 /* Build configuration list for PBXNativeTarget "GateLockerIOS" */;
 			buildPhases = (
+				090D8D75AF66D9175269588E /* [CP] Check Pods Manifest.lock */,
 				6718A1B023EC54F700138762 /* Sources */,
 				6718A1B123EC54F700138762 /* Frameworks */,
 				6718A1B223EC54F700138762 /* Resources */,
+				B8A4C912B4451E3103FA1749 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				6718A1C423EC551000138762 /* LaunchScreen.storyboard in Resources */,
+				6718A1CC23EC57F000138762 /* GoogleService-Info.plist in Resources */,
 				6718A1C123EC551000138762 /* Assets.xcassets in Resources */,
 				6718A1BF23EC54F700138762 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		090D8D75AF66D9175269588E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GateLockerIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A4C912B4451E3103FA1749 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GateLockerIOS/Pods-GateLockerIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GateLockerIOS/Pods-GateLockerIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GateLockerIOS/Pods-GateLockerIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6718A1B023EC54F700138762 /* Sources */ = {
@@ -282,11 +354,13 @@
 		};
 		6718A1C923EC551000138762 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE6326309459E45776D2DB8 /* Pods-GateLockerIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78Q494XNKK;
 				INFOPLIST_FILE = GateLockerIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +374,13 @@
 		};
 		6718A1CA23EC551000138762 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 543BE46F02305E0C2A1C7A2D /* Pods-GateLockerIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78Q494XNKK;
 				INFOPLIST_FILE = GateLockerIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
